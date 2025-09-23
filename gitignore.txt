@@ -1,0 +1,55 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos y carpetas de entorno local
+.env
+.env.*
+*.env
+
+# Configuraciones de IDEs/editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Cache y logs
+*.log
+logs/
+storage/logs/
+storage/framework/cache/
+storage/framework/sessions/
+storage/framework/views/
+storage/debugbar/
+
+# Dependencias de Composer
+/vendor/
+
+# Dependencias de Node.js (si usas Laravel Mix o frontend tooling)
+/node_modules/
+
+# Archivos de compilación o temporales
+/public/storage
+/public/hot
+/public/mix-manifest.json
+/public/js/*.map
+/public/css/*.map
+
+# PHPUnit
+.phpunit.result.cache
+
+# Otros archivos sensibles o temporales
+*.bak
+*.tmp
+*.swp
+
+# Base de datos local
+*.sqlite
+*.sqlite3
+database/*.sqlite
+
+# Laravel-specific (si usas Laravel)
+homestead.yaml
+Homestead.json
+npm-debug.log
+yarn-error.log
