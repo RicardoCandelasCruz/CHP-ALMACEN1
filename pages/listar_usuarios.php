@@ -4,10 +4,6 @@ if (!isset($_SESSION['usuario_id'])) {
     header("Location: ../index.php");
     exit();
 }
-
-echo "Ruta actual: " . __DIR__ . "\n";
-echo "Buscando: " . __DIR__ . "/includes/config.php\n";
-
 require __DIR__ . '/includes/config.php';
 
 try {

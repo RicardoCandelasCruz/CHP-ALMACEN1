@@ -1,8 +1,4 @@
 <?php
-
-echo "Ruta actual: " . __DIR__ . "\n";
-echo "Buscando: " . __DIR__ . "/includes/config.php\n";
-
 require __DIR__ . '/includes/config.php';
 // Obtener todos los productos
 try {
