@@ -6,9 +6,21 @@ error_reporting(E_ALL);
 ini_set('display_errors', '0');
 ini_set('log_errors', '1');
 
-require_once __DIR__ . '/../includes/config.php';
-require_once __DIR__ . '/../includes/Auth.php';
-require_once __DIR__ . '/../vendor/autoload.php';
+echo "Ruta actual: " . __DIR__ . "\n";
+echo "Buscando: " . __DIR__ . "/includes/config.php\n";
+
+require __DIR__ . '/includes/config.php';
+
+echo "Ruta actual: " . __DIR__ . "\n";
+echo "Buscando: " . __DIR__ . "/includes/Auth.php\n";
+
+require __DIR__ . '/includes/Auth.php';
+
+echo "Ruta actual: " . __DIR__ . "\n";
+echo "Buscando: " . __DIR__ . "/../vendor/autoload.php'\n";
+
+require __DIR__ . '/../vendor/autoload.php';
+
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;

@@ -1,5 +1,8 @@
 <?php
-include '../includes/config.php';
+echo "Ruta actual: " . __DIR__ . "\n";
+echo "Buscando: " . __DIR__ . "/includes/config.php\n";
+
+require __DIR__ . '/includes/config.php';
 
 try {
     // Obtener todos los usuarios con contraseñas en texto plano

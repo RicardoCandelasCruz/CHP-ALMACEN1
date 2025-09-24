@@ -5,7 +5,10 @@ if (!isset($_SESSION['usuario_id'])) {
     exit();
 }
 
-include '../includes/conexion.php';
+echo "Ruta actual: " . __DIR__ . "\n";
+echo "Buscando: " . __DIR__ . "/includes/config.php\n";
+
+require __DIR__ . '/includes/config.php';
 
 try {
     // Obtener todos los usuarios

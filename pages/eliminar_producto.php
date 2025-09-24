@@ -1,6 +1,13 @@
 <?php
-require_once __DIR__ . '/../includes/config.php';
-require_once __DIR__ . '/../includes/Auth.php';
+echo "Ruta actual: " . __DIR__ . "\n";
+echo "Buscando: " . __DIR__ . "/includes/config.php\n";
+
+require __DIR__ . '/includes/config.php';
+
+echo "Ruta actual: " . __DIR__ . "\n";
+echo "Buscando: " . __DIR__ . "/includes/Auth.php\n";
+
+require __DIR__ . '/includes/Auth.php';
 session_start();
 
 $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
