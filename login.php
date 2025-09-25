@@ -6,7 +6,7 @@ require __DIR__ . '/includes/Auth.php';
 // Conexión a PostgreSQL
 try {
 
-    error_log("Mensaje de debug en error_log");
+echo "<script>console.log(" inicia la conexión");</script>";
 
     $pdo = new PDO(
         "pgsql:host=".DB_HOST.";port=".DB_PORT.";dbname=".DB_NAME, 
@@ -20,7 +20,7 @@ try {
     $auth = new Auth($pdo);
 } catch (PDOException $e) {
 
-    error_log("Mensaje de debug en error_log".$e->getMessage());
+echo "<script>console.log(" . $e->getMessage() ");</script>";
 
 
     die("Error de conexión: " . $e->getMessage());
