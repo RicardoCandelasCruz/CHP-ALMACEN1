@@ -1,7 +1,7 @@
 <?php
 // Configuración de la base de datos PostgreSQL
-define('DB_HOST', 'aws-pedidosdb1.c7igma8qqvx8.us-east-2.rds.amazonaws.com');
-define('DB_PORT', '5432');
+define('DB_HOST', 'maglev.proxy.rlwy.net');
+define('DB_PORT', '39710');
 define('DB_NAME', 'pedidosdb');
 define('DB_USER', 'postgres');
 define('DB_PASS', 'mccvNsRssKCAbVKdlBAffRDYpvjslpfZ');
